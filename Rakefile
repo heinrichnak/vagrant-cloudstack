@@ -48,7 +48,8 @@ namespace :functional_tests do
       'PRIVATE_SSH_PORT',
       'SOURCE_CIDR',
       'LINUX_TEMPLATE_NAME',
-      'WINDOWS_TEMPLATE_NAME'
+      'WINDOWS_TEMPLATE_NAME',
+      'DISK_OFFERING_NAME'
     ].each do |var|
       if ENV[var].nil?
         puts "#{var} not set. Quitting"
